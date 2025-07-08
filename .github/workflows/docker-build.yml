@@ -48,4 +48,4 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker ${{ secrets.DOCKER_USERNAME }}/custom:${{ steps.vars.outputs.VERSION }}
+          docker push ${{ secrets.DOCKER_USERNAME }}/custom:${{ steps.vars.outputs.VERSION }}
